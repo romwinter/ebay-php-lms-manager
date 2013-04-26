@@ -1,13 +1,48 @@
-#summary One-sentence summary of this page.
+#summary Description of the internal databases used by the tool.
 
-= Introduction =
+= List of tables =
 
-Add your content here.
+  * *lms_jobs*: tracks all LMS-jobs (incl status and result) 
+  * *lms_item_list*: item updates are queued in this table
+  * *accounts*: ebay accounts used by the seller  
 
+== Table: lms_jobs ==
 
-= Details =
+|| *Field Name* || *Description* || *Field Type* || *Comment* ||
+||uuid||Unique ID of the LMS job||varchar(20)||||
+||lms_job_id||||||||
+||file_reference||||||||
+||file_reference_result||||||||
+||max_filesize||||||||
+||timestamp_start||||||||
+||timestamp_end||||||||
+||progress||||||||
+||status_local||||||||
+||status_ebay||||||||
+||result||||||||
+||message||||||||
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== Table: lms_item_list ==
+|| *Field Name* || *Description* || *Field Type* || *Comment* ||
+||id||||INTEGER PRIMARY KEY AUTOINCREMENT||||
+||lms_uuid||||||||
+||seller_item_id||||||||
+||xml||||||||
+||lms_status||||||||
+||lms_result||||||||
+||errors||||||||
+||errors_msg||||||||
+||warnings||||||||
+||warnings_msg||||||||
+||ebay_item_id||||||||
+||site||||||||
+||||||||||
+
+== Table: lms_accounts ==
+|| *Field Name* || *Description* || *Field Type* || *Comment* ||
+||id||||INTEGER PRIMARY KEY AUTOINCREMENT||||
+||account_id||||||||
+||token_sandbox||||||||
+||token_production||||||||
+||primary_site||||||||
+||||||||||
