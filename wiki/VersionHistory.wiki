@@ -1,3 +1,5 @@
+# Information about new features per release
+
 = Version History =
 
 Add your content here.
