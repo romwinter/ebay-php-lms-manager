@@ -1,13 +1,11 @@
 #summary Information about features/bugfixes per release
 
-= Introduction =
 
-Add your content here.
+== v0.2 (2013-04-28) ==
+  * Support of multiple accounts
+  * Bugfix: ReviseItemFixedPrice has been fixed (issue 1)
+  * New LMS-transaction: ReviseInventory
 
+== v0.1 (2013-04-20) ==
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * Initial version
